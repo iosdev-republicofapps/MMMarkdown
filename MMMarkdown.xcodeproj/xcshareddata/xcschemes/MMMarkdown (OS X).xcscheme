@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE813DD514F893EB00EC9469"
-               BuildableName = "libMMMarkdown-Mac.a"
-               BlueprintName = "MMMarkdown-Mac"
+               BlueprintIdentifier = "BED761561B374D6700687B36"
+               BuildableName = "MMMarkdown.framework"
+               BlueprintName = "MMMarkdown (OS X)"
+               ReferencedContainer = "container:MMMarkdown.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BED761601B374D6700687B36"
+               BuildableName = "MMMarkdownTests.xctest"
+               BlueprintName = "MMMarkdownTests"
                ReferencedContainer = "container:MMMarkdown.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,13 +46,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE813DE914F893EB00EC9469"
+               BlueprintIdentifier = "BED761601B374D6700687B36"
                BuildableName = "MMMarkdownTests.xctest"
                BlueprintName = "MMMarkdownTests"
                ReferencedContainer = "container:MMMarkdown.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BED761561B374D6700687B36"
+            BuildableName = "MMMarkdown.framework"
+            BlueprintName = "MMMarkdown (OS X)"
+            ReferencedContainer = "container:MMMarkdown.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -52,9 +75,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BE813DD514F893EB00EC9469"
-            BuildableName = "libMMMarkdown-Mac.a"
-            BlueprintName = "MMMarkdown-Mac"
+            BlueprintIdentifier = "BED761561B374D6700687B36"
+            BuildableName = "MMMarkdown.framework"
+            BlueprintName = "MMMarkdown (OS X)"
             ReferencedContainer = "container:MMMarkdown.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,6 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BED761561B374D6700687B36"
+            BuildableName = "MMMarkdown.framework"
+            BlueprintName = "MMMarkdown (OS X)"
+            ReferencedContainer = "container:MMMarkdown.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
