@@ -1,4 +1,23 @@
 # MMMarkdown Release Notes
+## 0.5.5
+ - #107: Create `NSRegularExpression`s using `dispatch_once`
+
+## 0.5.4
+ - #103: Don't let lists contain both bulleted and numbered items
+ - #104: Require a space after the # in headers
+ - #105: Let list items indent with 2 spaces
+
+## 0.5.3
+ - #101: Fix infinite loop in list parsing
+
+## 0.5.2
+ - #92: Allow `-`s in inline HTML
+
+## 0.5.1
+ - #88: Update Xcode project settings
+ - #89: Fix some broken unit tests
+ - #90: Add tvOS and watchOS targets
+ 
 ## 0.5
  - #63: Fix warnings from Xcode 6.3
  - #67: Improved link handling

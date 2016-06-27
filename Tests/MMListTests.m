@@ -299,6 +299,34 @@
     MMAssertMarkdownEqualsHTML(markdown, html);
 }
 
+- (void)testNestedListWithMultipleEmptyLinesAndBacktracking
+{
+    // https://github.com/mdiep/MMMarkdown/issues/100
+    NSString *markdown =
+        @"* A\n"
+         "    * B\n"
+         "\n"
+         "    * C\n"
+         "\n"
+         "    D\n";
+    NSString *html =
+        @"<ul>\n"
+         "<li>\n"
+         "<p>A</p>\n"
+         "<ul>\n"
+         "<li>\n"
+         "<p>B</p>\n"
+         "</li>\n"
+         "<li>\n"
+         "<p>C</p>\n"
+         "</li>\n"
+         "</ul>\n"
+         "<p>D</p>\n"
+         "</li>\n"
+         "</ul>";
+    MMAssertMarkdownEqualsHTML(markdown, html);
+}
+
 - (void)testList_followedByHorizontalRule
 {
     NSString *markdown = @"* One\n"
@@ -349,6 +377,44 @@
 - (void)testList_withLeadingSpace
 {
     MMAssertMarkdownEqualsHTML(@" - One\n - Two", @"<ul><li>One</li><li>Two</li></ul>");
+}
+
+- (void)testListFollowingAnotherList
+{
+    NSString *markdown =
+        @"- A\n"
+         "- B\n"
+         "\n"
+         "1. 1\n"
+         "1. 2\n";
+    NSString *HTML =
+        @"<ul>\n"
+        "<li>A</li>\n"
+        "<li>B</li>\n"
+        "</ul>\n"
+        "<ol>\n"
+        "<li>1</li>\n"
+        "<li>2</li>\n"
+        "</ol>\n";
+    MMAssertMarkdownEqualsHTML(markdown, HTML);
+}
+
+- (void)testListWith2SpaceIndentation
+{
+    NSString *markdown =
+        @"* 1\n"
+         "  * 2\n"
+         "* 3\n";
+    NSString *HTML =
+        @"<ul>\n"
+         "<li>1\n"
+         "<ul>\n"
+         "<li>2</li>\n"
+         "</ul>\n"
+         "</li>\n"
+         "<li>3</li>\n"
+         "</ul>\n";
+    MMAssertMarkdownEqualsHTML(markdown, HTML);
 }
 
 

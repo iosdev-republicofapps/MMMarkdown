@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BED7620E1B37810000687B36"
+               BlueprintIdentifier = "BE23E9121C0CF77D0087F587"
                BuildableName = "MMMarkdown.framework"
-               BlueprintName = "MMMarkdown (iOS)"
+               BlueprintName = "MMMarkdown (watchOS)"
                ReferencedContainer = "container:MMMarkdown.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BED7620E1B37810000687B36"
+            BlueprintIdentifier = "BE23E9121C0CF77D0087F587"
             BuildableName = "MMMarkdown.framework"
-            BlueprintName = "MMMarkdown (iOS)"
+            BlueprintName = "MMMarkdown (watchOS)"
             ReferencedContainer = "container:MMMarkdown.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BED7620E1B37810000687B36"
+            BlueprintIdentifier = "BE23E9121C0CF77D0087F587"
             BuildableName = "MMMarkdown.framework"
-            BlueprintName = "MMMarkdown (iOS)"
+            BlueprintName = "MMMarkdown (watchOS)"
             ReferencedContainer = "container:MMMarkdown.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
